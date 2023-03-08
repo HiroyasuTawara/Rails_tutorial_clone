@@ -1,4 +1,10 @@
 <div id="<%= dom_id user %>">
+  <% content_for(:title, @user.name) %>
+  <h1>
+    <%= gravatar_for @user, size: 100 %>
+    <%= @user.name %>
+  </h1>
+
   <p>
     <strong>Name:</strong>
     <%= user.name %>

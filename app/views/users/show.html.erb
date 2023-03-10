@@ -7,14 +7,6 @@
   </aside>
 </div>
 
-<div id="microposts">
-  <% @microposts.each do |micropost| %>
-    <%= render micropost %>
-    <p>
-      <%= link_to "Show this micropost", micropost %>
-    </p>
-  <% end %>
-</div>
 
 <div>
   <%= link_to "Edit this user", edit_user_path(@user) %> |
